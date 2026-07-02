@@ -4,6 +4,8 @@
     list-style: none;
     text-decoration: none;
     color: #000000;  
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 header {
@@ -18,12 +20,13 @@ header {
         align-items: center;
         
         a {
+            display: inline-block;
+            padding: 16px 0;
             color: #fff;
             font-size: 18px;
             text-transform: capitalize;
-            font-family: sans-serif;
             letter-spacing: 1px;
-            transition: 1s;
+            transition: 1s; 
 
             &:hover {
                 color: #ffbf00;
@@ -32,6 +35,7 @@ header {
 
         span {
             a {
+                padding: 0;
                 font-size: 32px;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -47,4 +51,69 @@ header {
 
     }
 
+}
+
+main {
+    section {
+        background-color: #111111;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        height: 585px;
+
+        .call-action {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            height: 700px;
+            padding-bottom: 200px;
+
+        }
+        
+
+        div {
+            width: 560px;
+
+            h1 {
+                color: #fff;
+                font-size: 64px;
+                margin-bottom: 32px;
+
+                span{
+                    color: #ffbf00;
+                }
+            }
+
+            p {
+                font-size: 24px;
+                color: #b2b2b2;
+                line-height: 32px;
+                margin-bottom: 20px;
+
+            }
+
+            a {
+                display: inline-block;
+                padding: 16px 32px;
+                font-size: 18px;
+                width: fit-content;
+                text-transform: uppercase;
+                font-weight: 600;
+                background: linear-gradient(#ffbf00, #f2a50c);
+                border: none;
+                cursor: pointer;
+                transition: 500ms;
+
+                &:hover {
+                    background: linear-gradient(#ffb60b, #e59317);
+                }
+
+            }
+            
+            img {
+                width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
 }
